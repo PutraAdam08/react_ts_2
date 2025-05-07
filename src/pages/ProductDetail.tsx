@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Product } from "../Interfaces";
 import { useParams } from "react-router-dom";
+import BuyCard from "../components/BuyCard";
 
 const API_URL = import.meta.env.VITE_API_URL;//import.meta.env.API_URL;
 
@@ -57,7 +58,7 @@ const ProductDetail = () => {
                                 <h3 className="text-xl text-gray-800 font-poppins font-semibold border-t-2 border-b-2">Description</h3>
                                 <p className="text-gray-800 font-poppins">{prod?.description}</p>
                             </div>
-                            <div className="bg-white rounded-3xl h-64 w-auto aspect-square shadow-md px-4"></div>
+                            <BuyCard />
                         </div>
                     )
                 }
