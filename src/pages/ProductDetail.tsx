@@ -51,7 +51,7 @@ const ProductDetail = () => {
                     : errorMessage ? (<h3 className='text-red-500'>{errorMessage}</h3>)
                     : (
                         <div className="flex flex-row justify-between gap-16">
-                            <img src={prod?.image} alt="" className="h-64 w-auto aspect-square" />
+                            <img src={prod?.image} alt="" className="h-64 w-auto aspect-square rounded-2xl" />
                             <div className="flex flex-col w-full gap-4">
                                 <h1 className="text-4xl font-poppins font-bold">{prod?.title}</h1>
                                 <h2 className="text-3xl font-poppins font-semibold">${prod?.price}</h2>

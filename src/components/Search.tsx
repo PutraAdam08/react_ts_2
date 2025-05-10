@@ -1,4 +1,5 @@
 import { useState } from "react";
+import search from "../assets/search.svg";
 
 interface Props {
     searchTerm : string;
@@ -15,7 +16,7 @@ const Search = (props: Props) => {
     return(
         <>
             <form className="self-center w-full h-8 px-2 gap-2 border-2 rounded-2xl border-gray-400 flex">
-                <img className="size-6 self-center" src="src\assets\search.svg" onClick={handleClick}/>
+                <img className="size-6 self-center" src={search} onClick={handleClick}/>
                 <input style={{outline: "none"}} className="w-full" type="text" id="search" name="search" placeholder="Find your item" onChange={(e) => setKey(e.target.value)}/>
             </form>
         </>
