@@ -60,7 +60,6 @@ const LoginPage = () => {
                             loginHandler();
                         }}>Submit</button>
                     </div>
-                    <h1>{token ? token : 'No token received'}</h1>
                 </div>
             </div>
         </>
