@@ -12,4 +12,9 @@ interface Product {
     image: string;
 }
 
-export type { Search, Product };
+interface Credential {
+    'username': string;
+    'password': string;
+}
+
+export type { Search, Product, Credential };
