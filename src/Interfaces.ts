@@ -17,4 +17,15 @@ interface Credential {
     'password': string;
 }
 
-export type { Search, Product, Credential };
+interface Cart {
+    'id'        : number;
+    'userId'    : number;
+    'products'  : Product[];
+}
+
+interface CartProduct {
+    product: Product;
+    quantity: number;
+}
+
+export type { Search, Product, Credential, Cart, CartProduct };

@@ -14,7 +14,6 @@ headers: {
 };
 
 const ProductPage = () => {
-  //const [hasLiked, setHasLiked] = useState();
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [prod, setProd] = useState<Product[]>([]);
   const [errorMessage, setErrorMessage] = useState<string>('');
@@ -26,10 +25,10 @@ const ProductPage = () => {
       const endpoint = `${API_URL}/products`;
       const response = await fetch(endpoint, getProduct);
 
-      if(!response.ok) throw new Error('Failed to fetch product');
+      if(!response.ok) throw new Error('Failed to fetch cart');
       const data = await response.json();
       if(data.Response === 'False'){
-        setErrorMessage(data.Error || 'Failed to fetch product');
+        setErrorMessage(data.Error || 'Failed to fetch cart');
       }
 
       console.log(data);
