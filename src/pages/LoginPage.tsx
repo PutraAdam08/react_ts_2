@@ -53,7 +53,7 @@ const LoginPage = () => {
                         <label htmlFor="" className="text-2xl font-semibold font-poppins">Username</label>
                         <input className="p-2 bg-gray-100 text-xl font-poppins border-3 border-gray-300 w-full h-8 rounded-xl mb-4" onChange={(e) => setUsername(e.target.value)} />
                         <label htmlFor="" className="text-2xl font-semibold font-poppins">Password</label>
-                        <input className="p-2 bg-gray-100 text-xl font-poppins border-3 border-gray-300 w-full h-8 rounded-xl mb-4" onChange={(e) => setPassword(e.target.value)} />
+                        <input className="p-2 bg-gray-100 text-xl font-poppins border-3 border-gray-300 w-full h-8 rounded-xl mb-4" type="password" onChange={(e) => setPassword(e.target.value)} />
                     </form>
                     <div className="flex justify-center w-full">
                         <button className="rounded-3xl bg-violet-400 hover:bg-violet-500 w-42 h-12 text-2xl text-white font-poppins font-semibold justify-self-center" onClick={() => {

@@ -36,7 +36,8 @@ const CartPage = () => {
             const data = response.data;
             let tmp:CartProduct = {
                 "product" : data,
-                "quantity": prods1[i].quantity
+                "quantity": prods1[i].quantity,
+                "userId": cart.userId
             };
             prducts.push(tmp);
         }
@@ -86,7 +87,7 @@ const CartPage = () => {
                 <div className="flex flex-col gap-12 h-132 overflow-y-auto mb-16">
                     {
                         products.map(product => (
-                            <CartCard product={product.product} quantity={product.quantity}/>
+                            <CartCard product={product.product} quantity={product.quantity} userId={product.userId}/>
                         ))
                     }
                 </div>

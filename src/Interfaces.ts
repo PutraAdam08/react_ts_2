@@ -24,6 +24,7 @@ interface Cart {
 }
 
 interface CartProduct {
+    userId: number;
     product: Product;
     quantity: number;
 }
