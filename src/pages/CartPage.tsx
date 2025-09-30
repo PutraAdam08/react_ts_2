@@ -41,7 +41,7 @@ const CartPage = () => {
             };
             prducts.push(tmp);
         }
-        console.log(prducts)
+        //console.log(prducts)
         setProducts(prducts);
     }
     
@@ -52,7 +52,7 @@ const CartPage = () => {
             const response = await axios.get(endpoint);
             const data = response.data;
             const fdata = filterCart(data)
-            console.log(fdata.products);
+            //console.log(fdata.products);
             setCart(fdata);
             getCartProducts(fdata);
             //console.log(products);
