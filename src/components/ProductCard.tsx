@@ -13,7 +13,7 @@ const ProductCard: FC<Product> = ({title, price, category, image}) => {
 
     return(
         <>
-            <div className="bg-white rounded-3xl xl:h-80 xl:w-56 h-96 w-3xs shadow-md px-4 pt-4">
+            <div className="bg-white rounded-3xl xl:h-96 xl:w-3xs h-80 w-56 shadow-md px-4 pt-4">
                 <img className="w-full aspect-square mb-2" src={image}/>
                 <h2 className="truncate text-2xl xl:text-xl font-medium text-gray-800">{title}</h2>
                 <h3 className="text-2xl xl:text-xl font-bold">${price}</h3>
